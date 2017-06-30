@@ -11,7 +11,6 @@
 		1F416D671F052B2C00D15704 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F416D661F052B2C00D15704 /* ViewController.swift */; };
 		1F416D6A1F052B2C00D15704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F416D681F052B2C00D15704 /* Main.storyboard */; };
 		1F416D6C1F052B2C00D15704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F416D6B1F052B2C00D15704 /* Assets.xcassets */; };
-		1F416D6F1F052B2C00D15704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F416D6D1F052B2C00D15704 /* LaunchScreen.storyboard */; };
 		1F416D7A1F052B2C00D15704 /* MapBorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F416D791F052B2C00D15704 /* MapBorderTests.swift */; };
 		1F416D851F052B2C00D15704 /* MapBorderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F416D841F052B2C00D15704 /* MapBorderUITests.swift */; };
 		1F416D971F052BFA00D15704 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F416D961F052BFA00D15704 /* Border.swift */; };
@@ -43,7 +42,6 @@
 		1F416D661F052B2C00D15704 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F416D691F052B2C00D15704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F416D6B1F052B2C00D15704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1F416D6E1F052B2C00D15704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F416D701F052B2C00D15704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F416D751F052B2C00D15704 /* MapBorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapBorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F416D791F052B2C00D15704 /* MapBorderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBorderTests.swift; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				1F416D941F052BCB00D15704 /* Model */,
 				1F416D951F052BD000D15704 /* View */,
 				1F416D681F052B2C00D15704 /* Main.storyboard */,
-				1F416D6D1F052B2C00D15704 /* LaunchScreen.storyboard */,
 				1F416D6B1F052B2C00D15704 /* Assets.xcassets */,
 				1F416D701F052B2C00D15704 /* Info.plist */,
 			);
@@ -278,7 +275,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F416D6F1F052B2C00D15704 /* LaunchScreen.storyboard in Resources */,
 				1F416D6C1F052B2C00D15704 /* Assets.xcassets in Resources */,
 				1F416D6A1F052B2C00D15704 /* Main.storyboard in Resources */,
 			);
@@ -351,14 +347,6 @@
 				1F416D691F052B2C00D15704 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1F416D6D1F052B2C00D15704 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F416D6E1F052B2C00D15704 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -461,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = S2U79F8BQG;
 				INFOPLIST_FILE = MapBorder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -475,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = S2U79F8BQG;
 				INFOPLIST_FILE = MapBorder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -558,6 +548,7 @@
 				1F416D8B1F052B2C00D15704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F416D8C1F052B2C00D15704 /* Build configuration list for PBXNativeTarget "MapBorderTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +557,7 @@
 				1F416D8E1F052B2C00D15704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F416D8F1F052B2C00D15704 /* Build configuration list for PBXNativeTarget "MapBorderUITests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +566,7 @@
 				1F416D911F052B2C00D15704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
