@@ -12,7 +12,6 @@ import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
     
-    
     // MARK: Properties
     @IBOutlet weak var mapObj: MKMapView!
     @IBOutlet weak var countryName1: UITextField!
@@ -51,10 +50,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         let country1 = retrieveData(countryName: countryName1.text!)
         let country2 = retrieveData(countryName: countryName2.text!)
         
-        if (country1 == nil || country2 == nil) {
-            self.showAlert(message: "Please, enter with the countries!")
-            
-        } else if (country1 != nil || country2 != nil) && (countryName1.text! == countryName2.text!) {
+        if (country1 != nil || country2 != nil) && (countryName1.text! == countryName2.text!) {
             self.showAlert(message: "Please, enter with different countries!")
             
         } else if (country1 != nil && country2 != nil) {
@@ -108,7 +104,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             self.tableDistances.reloadData()
             
         } else {
-            self.showAlert(message: "Please, enter with valid countries!")
+            self.showAlert(message: "Please, enter with two valid countries!")
         }
     }
     
@@ -116,7 +112,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         let coordinate0 = CLLocation(latitude: from.latitude, longitude: from.longitude)
         let coordinate1 = CLLocation(latitude: to.latitude, longitude: to.longitude)
         let distance = coordinate0.distance(from: coordinate1) / 1000
-        return String(distance.rounded()) + "KM"
+        return String(distance.rounded()) + " KM"
     }
     
     func addAnnotation(country: Country) {
